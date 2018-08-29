@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://dash.della.cloud.rf29.net" />
+<title>T1: Search (US)</title>
+<meta name="ghost-inspector-details" content="" />
+<meta name="ghost-inspector-browser" content="slimerjs" />
+<meta name="ghost-inspector-userAgent" content="" />
+<meta name="ghost-inspector-region" content="us-east-1" />
+<meta name="ghost-inspector-globalStepDelay" content="250" />
+<meta name="ghost-inspector-maxWaitDelay" content="15000" />
+<meta name="ghost-inspector-maxAjaxDelay" content="10000" />
+<meta name="ghost-inspector-viewportSize" content="1600x1200" />
+<meta name="ghost-inspector-screenshotTarget" content="" />
+<meta name="ghost-inspector-screenshotExclusions" content="" />
+<meta name="ghost-inspector-screenshotCompareEnabled" content="false" />
+<meta name="ghost-inspector-screenshotCompareThreshold" content="0.1" />
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr>
+<td rowspan="1" colspan="3">T1: Search (US)</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>open</td>
+<td>/</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr data-optional="true">
+<td>storeEval</td>
+<td><script>return (window.location.host.substr(0,4) == "dash") ? window.location.host.replace("dash","www") : window.location.host;</script></td>
+<td>instanceHref</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>pause</td>
+<td>20000</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>open</td>
+<td>http://${instanceHref}/</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.fa.fa-search</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=.fa.fa-search</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#search-header</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=#search-header</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#search-header</td>
+<td></td>
+</tr>
+<tr>
+<td>type</td>
+<td>css=#search-header</td>
+<td>Beyonce</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#search-header</td>
+<td></td>
+</tr>
+<tr>
+<td>sendKeys</td>
+<td>css=#search-header</td>
+<td>${KEY_ENTER}</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.page-header-content > h1</td>
+<td></td>
+</tr>
+<tr>
+<td>assertText</td>
+<td>css=.page-header-content > h1</td>
+<td>*Search*</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>pause</td>
+<td>5000</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#search-panel</td>
+<td></td>
+</tr>
+<tr>
+<td>assertText</td>
+<td>css=#search-panel</td>
+<td>*Beyonce*</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#search-panel</td>
+<td></td>
+</tr>
+<tr>
+<td>assertText</td>
+<td>css=#search-panel</td>
+<td>*Beyonce*</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#search-panel</td>
+<td></td>
+</tr>
+<tr>
+<td>assertText</td>
+<td>css=#search-panel</td>
+<td>*Beyonce*</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.fa.fa-search.submit</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=.fa.fa-search.submit</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.module > span</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=.module > span</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.module > div > div:nth-of-type(1) > .row > div</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=.module > div > div:nth-of-type(1) > .row > div</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

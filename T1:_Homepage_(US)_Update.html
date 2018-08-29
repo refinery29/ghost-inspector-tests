@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://dash.della.cloud.rf29.net" />
+<title>T1: Homepage (US) Update</title>
+<meta name="ghost-inspector-details" content="" />
+<meta name="ghost-inspector-browser" content="slimerjs" />
+<meta name="ghost-inspector-userAgent" content="" />
+<meta name="ghost-inspector-region" content="us-east-1" />
+<meta name="ghost-inspector-globalStepDelay" content="250" />
+<meta name="ghost-inspector-maxWaitDelay" content="15000" />
+<meta name="ghost-inspector-maxAjaxDelay" content="10000" />
+<meta name="ghost-inspector-viewportSize" content="1600x1200" />
+<meta name="ghost-inspector-screenshotTarget" content="" />
+<meta name="ghost-inspector-screenshotExclusions" content="" />
+<meta name="ghost-inspector-screenshotCompareEnabled" content="false" />
+<meta name="ghost-inspector-screenshotCompareThreshold" content="0.1" />
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr>
+<td rowspan="1" colspan="3">T1: Homepage (US) Update</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>open</td>
+<td>/</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>pause</td>
+<td>10000</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>storeEval</td>
+<td><script>return (window.location.host.substr(0,4) == "dash") ? window.location.host.replace("dash","www") : window.location.host;</script></td>
+<td>instanceHref</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>open</td>
+<td>http://${instanceHref}/</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.module > div > div > .hero-row</td>
+<td></td>
+</tr>
+<tr>
+<td>verifyElementPresent</td>
+<td>css=.module > div > div > .hero-row</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.date</td>
+<td></td>
+</tr>
+<tr>
+<td>verifyElementPresent</td>
+<td>css=.date</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.module-title</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=.module-title</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.hero-card-content > .story-content</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=.hero-card-content > .story-content</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.cta-bar > .cta-button</td>
+<td></td>
+</tr>
+<tr>
+<td>verifyElementPresent</td>
+<td>css=.cta-bar > .cta-button</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.three-unequal-content-wrapper > .cta-content.three-unequal-content > .cta-image > img</td>
+<td></td>
+</tr>
+<tr>
+<td>verifyElementPresent</td>
+<td>css=.three-unequal-content-wrapper > .cta-content.three-unequal-content > .cta-image > img</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.news-ticker</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=.news-ticker</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.news-ticker-content</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=.news-ticker-content</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.latest-title > span</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=.latest-title > span</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=i.fa.fa-angle-up</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=i.fa.fa-angle-up</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.news-arrow > i.fa.fa-angle-down</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=.news-arrow > i.fa.fa-angle-down</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.featured-stories</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=.featured-stories</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#below-the-fold-modules > div:nth-of-type(1) > .module > div > div:nth-of-type(4) > .row</td>
+<td></td>
+</tr>
+<tr>
+<td>verifyElementPresent</td>
+<td>css=#below-the-fold-modules > div:nth-of-type(1) > .module > div > div:nth-of-type(4) > .row</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#below-the-fold-modules > div:nth-of-type(4) > div</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=#below-the-fold-modules > div:nth-of-type(4) > div</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#below-the-fold-modules > div:nth-of-type(4) > div > .module-header:nth-of-type(1) > .container > h2.large-title</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=#below-the-fold-modules > div:nth-of-type(4) > div > .module-header:nth-of-type(1) > .container > h2.large-title</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#below-the-fold-modules > div:nth-of-type(4) > div</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=#below-the-fold-modules > div:nth-of-type(4) > div</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#below-the-fold-modules > div:nth-of-type(4) > div > .module-header:nth-of-type(2) > .container > h2.title</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=#below-the-fold-modules > div:nth-of-type(4) > div > .module-header:nth-of-type(2) > .container > h2.title</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.row.four-collection</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=.row.four-collection</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#below-the-fold-modules > div:nth-of-type(5) > .module > .module-header</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=#below-the-fold-modules > div:nth-of-type(5) > .module > .module-header</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#below-the-fold-modules > div:nth-of-type(5) > .module > div > div:nth-of-type(1) > .row</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=#below-the-fold-modules > div:nth-of-type(5) > .module > div > div:nth-of-type(1) > .row</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#below-the-fold-modules > div:nth-of-type(5) > .module > div > div:nth-of-type(1) > .row > div:nth-of-type(2)</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=#below-the-fold-modules > div:nth-of-type(5) > .module > div > div:nth-of-type(1) > .row > div:nth-of-type(2)</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#below-the-fold-modules > div:nth-of-type(5) > .module > div > div:nth-of-type(1) > .row > div:nth-of-type(3)</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=#below-the-fold-modules > div:nth-of-type(5) > .module > div > div:nth-of-type(1) > .row > div:nth-of-type(3)</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#below-the-fold-modules > div:nth-of-type(5) > .module > div > div:nth-of-type(2) > .row:nth-of-type(1)</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=#below-the-fold-modules > div:nth-of-type(5) > .module > div > div:nth-of-type(2) > .row:nth-of-type(1)</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=button.pill</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=button.pill</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

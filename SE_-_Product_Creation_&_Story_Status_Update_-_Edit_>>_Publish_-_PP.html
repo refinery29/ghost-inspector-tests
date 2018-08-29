@@ -1,0 +1,838 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://dash.della.cloud.rf29.net" />
+<title>SE - Product Creation & Story Status Update - Edit >> Publish  - PP</title>
+<meta name="ghost-inspector-details" content="Create a new product from within the story editor.
+Change Story Status from "edit" to "publish" then preview page on desktop." />
+<meta name="ghost-inspector-browser" content="slimerjs" />
+<meta name="ghost-inspector-userAgent" content="" />
+<meta name="ghost-inspector-region" content="us-east-1" />
+<meta name="ghost-inspector-globalStepDelay" content="1000" />
+<meta name="ghost-inspector-maxWaitDelay" content="30000" />
+<meta name="ghost-inspector-maxAjaxDelay" content="10000" />
+<meta name="ghost-inspector-viewportSize" content="1600x1200" />
+<meta name="ghost-inspector-screenshotTarget" content="" />
+<meta name="ghost-inspector-screenshotExclusions" content="" />
+<meta name="ghost-inspector-screenshotCompareEnabled" content="false" />
+<meta name="ghost-inspector-screenshotCompareThreshold" content="0.1" />
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr>
+<td rowspan="1" colspan="3">SE - Product Creation & Story Status Update - Edit >> Publish  - PP</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>open</td>
+<td>/</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor Templates - 1 - Login Pre-Prod Deploy-->
+<tr data-optional="true">
+<td>storeEval</td>
+<td><script>return 'dash.' + window.location.host.split(".").slice(1).join('.')</script></td>
+<td>instanceHref</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor Templates - 1 - Login Pre-Prod Deploy
+Dash Login Screen-->
+<tr>
+<td>open</td>
+<td>http://${instanceHref}/login/</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor Templates - 1 - Login Pre-Prod Deploy-->
+<tr>
+<td>pause</td>
+<td>10000</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor Templates - 1 - Login Pre-Prod Deploy-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#login-email</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=#login-email</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor Templates - 1 - Login Pre-Prod Deploy-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#login-email</td>
+<td></td>
+</tr>
+<tr>
+<td>type</td>
+<td>css=#login-email</td>
+<td>cedric.gore@refinery29.com</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor Templates - 1 - Login Pre-Prod Deploy-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=input[name="password"]</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=input[name="password"]</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor Templates - 1 - Login Pre-Prod Deploy-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=input[name="password"]</td>
+<td></td>
+</tr>
+<tr data-private="true">
+<td>type</td>
+<td>css=input[name="password"]</td>
+<td>vandella</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor Templates - 1 - Login Pre-Prod Deploy-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=input[type="submit"]</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=input[type="submit"]</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor Templates - 1 - Login Pre-Prod Deploy-->
+<tr>
+<td>pause</td>
+<td>10000</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor Templates - 1 - Login Pre-Prod Deploy-->
+<tr>
+<td>open</td>
+<td>/stories/new/setup#</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor Templates - 1 - Login Pre-Prod Deploy-->
+<tr>
+<td>pause</td>
+<td>10000</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>open</td>
+<td>/stories/167712/editor</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>pause</td>
+<td>500</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.Modal__close-button</td>
+<td></td>
+</tr>
+<tr data-optional="true">
+<td>click</td>
+<td>css=.Modal__close-button</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Click to open product modal-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.AssetToolbar__controls > i.AssetToolbar__icon.fa:nth-of-type(3)</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=.AssetToolbar__controls > i.AssetToolbar__icon.fa:nth-of-type(3)</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Click to open create new product form-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.AddButton__button > i.fa.fa-plus</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=.AddButton__button > i.fa.fa-plus</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Click into url field-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=input[name="affiliate_url"]</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=input[name="affiliate_url"]</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Insert product url into url field-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=input[name="affiliate_url"]</td>
+<td></td>
+</tr>
+<tr>
+<td>type</td>
+<td>css=input[name="affiliate_url"]</td>
+<td>https://www.modcloth.com/shop/summer-trends/fantasizing-flawless-shift-dress/152685.html?cgid=summer_trends_232&dwvar_152685_color=MSTD#start=7</td>
+</tr>
+<tr>
+<td>store</td>
+<td>${ALPHANUMERIC}-${TIMESTAMP}</td>
+<td>brandretailerName</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Create brand modal click-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.FormItemGroup > .AddButton:nth-of-type(2) > .AddButton__button > i.fa.fa-plus</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=.FormItemGroup > .AddButton:nth-of-type(2) > .AddButton__button > i.fa.fa-plus</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Click into the brand name field-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.AddBrandOrRetailerModal__form > .FormItem.FormItem--default > div > input[name="name"].TextInput</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=.AddBrandOrRetailerModal__form > .FormItem.FormItem--default > div > input[name="name"].TextInput</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Insert brand name 'Brand Name Test'-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.AddBrandOrRetailerModal__form > .FormItem.FormItem--default > div > input[name="name"].TextInput</td>
+<td></td>
+</tr>
+<tr>
+<td>type</td>
+<td>css=.AddBrandOrRetailerModal__form > .FormItem.FormItem--default > div > input[name="name"].TextInput</td>
+<td>${brandretailerName}</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Save click for new brand-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.AddBrandOrRetailerModal > button[type="button"].Button:nth-of-type(1) > span</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=.AddBrandOrRetailerModal > button[type="button"].Button:nth-of-type(1) > span</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Click to open create retailer modal-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.FormItemGroup > .AddButton:nth-of-type(4) > .AddButton__button > i.fa.fa-plus</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=.FormItemGroup > .AddButton:nth-of-type(4) > .AddButton__button > i.fa.fa-plus</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Click into retailer name field-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.AddBrandOrRetailerModal__form > .FormItem.FormItem--default:nth-of-type(1) > div > input[name="name"].TextInput</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=.AddBrandOrRetailerModal__form > .FormItem.FormItem--default:nth-of-type(1) > div > input[name="name"].TextInput</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Assign name 'Retailer Name Test'-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.AddBrandOrRetailerModal__form > .FormItem.FormItem--default:nth-of-type(1) > div > input[name="name"].TextInput</td>
+<td></td>
+</tr>
+<tr>
+<td>type</td>
+<td>css=.AddBrandOrRetailerModal__form > .FormItem.FormItem--default:nth-of-type(1) > div > input[name="name"].TextInput</td>
+<td>${brandretailerName}</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Click into retailer url field-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=input[name="url"]</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=input[name="url"]</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--assign url to retailer url field-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=input[name="url"]</td>
+<td></td>
+</tr>
+<tr>
+<td>type</td>
+<td>css=input[name="url"]</td>
+<td>https://www.modcloth.com/</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Save click for retailer modal-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.AddBrandOrRetailerModal > button[type="button"].Button:nth-of-type(1) > span</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=.AddBrandOrRetailerModal > button[type="button"].Button:nth-of-type(1) > span</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Click into product name field-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=input[name="name"]</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=input[name="name"]</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Assign product name 'QA test Product'-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=input[name="name"]</td>
+<td></td>
+</tr>
+<tr>
+<td>type</td>
+<td>css=input[name="name"]</td>
+<td>QA Test Product</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Click into price field-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=input[name="price"]</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=input[name="price"]</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Insert price '50.00'-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=input[name="price"]</td>
+<td></td>
+</tr>
+<tr>
+<td>type</td>
+<td>css=input[name="price"]</td>
+<td>50.00</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Click into sale price field-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=input[name="special_price"]</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=input[name="special_price"]</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Insert sale price '45.99'-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=input[name="special_price"]</td>
+<td></td>
+</tr>
+<tr>
+<td>type</td>
+<td>css=input[name="special_price"]</td>
+<td>45.99</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Click into image uploader-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.Dropzone__icon</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=.Dropzone__icon</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Insert image into image uploader-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=input[type="file"]</td>
+<td></td>
+</tr>
+<tr>
+<td>type</td>
+<td>css=input[type="file"]</td>
+<td>https://ghostinspector-prod.s3.amazonaws.com/uploads/f94d9aff-d669-4589-a541-8197ac53ad2c.jpg</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Click into sponsored checkbox-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.Checkbox__icon</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=.Checkbox__icon</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Click into impression tracker field-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=input[name="impression_tracker_url"]</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=input[name="impression_tracker_url"]</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Insert impression tracker url-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=input[name="impression_tracker_url"]</td>
+<td></td>
+</tr>
+<tr>
+<td>type</td>
+<td>css=input[name="impression_tracker_url"]</td>
+<td>http://1x1px.me/FF4D00-0.8.png</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Click into click tracker url field-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=input[name="click_tracker_url"]</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=input[name="click_tracker_url"]</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Insert url into click tracker url field-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=input[name="click_tracker_url"]</td>
+<td></td>
+</tr>
+<tr>
+<td>type</td>
+<td>css=input[name="click_tracker_url"]</td>
+<td>http://1x1px.me/FF4D00-0.8.png</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Save product button click-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.product-button-container > div > button[type="button"].Button:nth-of-type(3) > span</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=.product-button-container > div > button[type="button"].Button:nth-of-type(3) > span</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.Header__buttons > button[type="button"].Button:nth-of-type(2)</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=.Header__buttons > button[type="button"].Button:nth-of-type(2)</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>pause</td>
+<td>5000</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>open</td>
+<td>/stories/162956/setup</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.Modal__close-button</td>
+<td></td>
+</tr>
+<tr data-optional="true">
+<td>click</td>
+<td>css=.Modal__close-button</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#react-select-publishing-status-select--value > div:nth-of-type(1)</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=#react-select-publishing-status-select--value > div:nth-of-type(1)</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#react-select-publishing-status-select--option-0</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=#react-select-publishing-status-select--option-0</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.Header__buttons > button[type="button"].Button:nth-of-type(2) > span</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=.Header__buttons > button[type="button"].Button:nth-of-type(2) > span</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#react-select-publishing-status-select--value > div:nth-of-type(1)</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=#react-select-publishing-status-select--value > div:nth-of-type(1)</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#react-select-publishing-status-select--option-3</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=#react-select-publishing-status-select--option-3</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.Header__buttons > button[type="button"].Button:nth-of-type(2) > span</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=.Header__buttons > button[type="button"].Button:nth-of-type(2) > span</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.NotificationBar__item.NotificationBar__item--success > .NotificationBar__item__text</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=.NotificationBar__item.NotificationBar__item--success > .NotificationBar__item__text</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>pause</td>
+<td>5000</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://dash.della.cloud.rf29.net" />
+<title>Palette Element Assertions - PP</title>
+<meta name="ghost-inspector-details" content="Asserts that all major Palette page elements exist in the palette library and asset editor.
+
+A visual inspection of the palette library and asset editor can be used to determine if a failure is valid." />
+<meta name="ghost-inspector-browser" content="slimerjs" />
+<meta name="ghost-inspector-userAgent" content="" />
+<meta name="ghost-inspector-region" content="us-east-1" />
+<meta name="ghost-inspector-globalStepDelay" content="1000" />
+<meta name="ghost-inspector-maxWaitDelay" content="30000" />
+<meta name="ghost-inspector-maxAjaxDelay" content="10000" />
+<meta name="ghost-inspector-viewportSize" content="1600x1200" />
+<meta name="ghost-inspector-screenshotTarget" content="" />
+<meta name="ghost-inspector-screenshotExclusions" content="" />
+<meta name="ghost-inspector-screenshotCompareEnabled" content="false" />
+<meta name="ghost-inspector-screenshotCompareThreshold" content="0.1" />
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr>
+<td rowspan="1" colspan="3">Palette Element Assertions - PP</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>open</td>
+<td>/</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor Templates - 1 - Login Pre-Prod Deploy-->
+<tr data-optional="true">
+<td>storeEval</td>
+<td><script>return 'dash.' + window.location.host.split(".").slice(1).join('.')</script></td>
+<td>instanceHref</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor Templates - 1 - Login Pre-Prod Deploy
+Dash Login Screen-->
+<tr>
+<td>open</td>
+<td>http://${instanceHref}/login/</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor Templates - 1 - Login Pre-Prod Deploy-->
+<tr>
+<td>pause</td>
+<td>10000</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor Templates - 1 - Login Pre-Prod Deploy-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#login-email</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=#login-email</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor Templates - 1 - Login Pre-Prod Deploy-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#login-email</td>
+<td></td>
+</tr>
+<tr>
+<td>type</td>
+<td>css=#login-email</td>
+<td>cedric.gore@refinery29.com</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor Templates - 1 - Login Pre-Prod Deploy-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=input[name="password"]</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=input[name="password"]</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor Templates - 1 - Login Pre-Prod Deploy-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=input[name="password"]</td>
+<td></td>
+</tr>
+<tr data-private="true">
+<td>type</td>
+<td>css=input[name="password"]</td>
+<td>vandella</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor Templates - 1 - Login Pre-Prod Deploy-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=input[type="submit"]</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=input[type="submit"]</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor Templates - 1 - Login Pre-Prod Deploy-->
+<tr>
+<td>pause</td>
+<td>10000</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor Templates - 1 - Login Pre-Prod Deploy-->
+<tr>
+<td>open</td>
+<td>/stories/new/setup#</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor Templates - 1 - Login Pre-Prod Deploy-->
+<tr>
+<td>pause</td>
+<td>10000</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>pause</td>
+<td>5000</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>open</td>
+<td>/dam/catalog/</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Image/Video Uploader-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.Header</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=.Header</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Image/Video Uploader-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=button[type="button"]</td>
+<td></td>
+</tr>
+<tr>
+<td>verifyElementPresent</td>
+<td>css=button[type="button"]</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Search Field-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#react-select-field-select--value > div:nth-of-type(2)</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=#react-select-field-select--value > div:nth-of-type(2)</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Asset Filter Element-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.list-view-filters > ul > .list-view-filter:nth-of-type(2) > span</td>
+<td></td>
+</tr>
+<tr>
+<td>assertText</td>
+<td>css=.list-view-filters > ul > .list-view-filter:nth-of-type(2) > span</td>
+<td>*All*</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Asset Filter Element-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.list-view-filters > ul > .list-view-filter:nth-of-type(3) > span</td>
+<td></td>
+</tr>
+<tr>
+<td>assertText</td>
+<td>css=.list-view-filters > ul > .list-view-filter:nth-of-type(3) > span</td>
+<td>*Your Uploads*</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Asset Filter Element-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.list-view-filters > ul > .list-view-filter:nth-of-type(4) > span</td>
+<td></td>
+</tr>
+<tr>
+<td>assertText</td>
+<td>css=.list-view-filters > ul > .list-view-filter:nth-of-type(4) > span</td>
+<td>*Illustration*</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Asset Filter Element-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.list-view-filters > ul > .list-view-filter:nth-of-type(5) > span</td>
+<td></td>
+</tr>
+<tr>
+<td>assertText</td>
+<td>css=.list-view-filters > ul > .list-view-filter:nth-of-type(5) > span</td>
+<td>*Photograph*</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Asset Filter Element-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.list-view-filters > ul > .list-view-filter:nth-of-type(6) > span</td>
+<td></td>
+</tr>
+<tr>
+<td>assertText</td>
+<td>css=.list-view-filters > ul > .list-view-filter:nth-of-type(6) > span</td>
+<td>*Video*</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Checkbox-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=label.Checkbox</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=label.Checkbox</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Checkbox Icon-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.Checkbox__icon</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=.Checkbox__icon</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Assert Asset Upload Element Present-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=i.fa.fa-th-list</td>
+<td></td>
+</tr>
+<tr>
+<td>doubleClick</td>
+<td>css=i.fa.fa-th-list</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Assert All Filter Element Present-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=table.nice > thead > tr > th:nth-of-type(1)</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=table.nice > thead > tr > th:nth-of-type(1)</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Assert Title Filter Element Present-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=table.nice > thead > tr > th.sortable:nth-of-type(3) > .title</td>
+<td></td>
+</tr>
+<tr>
+<td>assertText</td>
+<td>css=table.nice > thead > tr > th.sortable:nth-of-type(3) > .title</td>
+<td>*Title*</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Assert Title Sort Filter Element Present-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=table.nice > thead > tr > th.sortable:nth-of-type(3) > span:nth-of-type(2)</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=table.nice > thead > tr > th.sortable:nth-of-type(3) > span:nth-of-type(2)</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Assert Creator Filter Element Present-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=table.nice > thead > tr > th.sortable:nth-of-type(4) > .title</td>
+<td></td>
+</tr>
+<tr>
+<td>assertText</td>
+<td>css=table.nice > thead > tr > th.sortable:nth-of-type(4) > .title</td>
+<td>*Creator*</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Assert Creator Sort Filter Element Present-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=table.nice > thead > tr > th.sortable:nth-of-type(4) > span:nth-of-type(2)</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=table.nice > thead > tr > th.sortable:nth-of-type(4) > span:nth-of-type(2)</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Assert Asset Title Element Present-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=table.nice > thead > tr > th.sortable:nth-of-type(5) > .title</td>
+<td></td>
+</tr>
+<tr>
+<td>assertText</td>
+<td>css=table.nice > thead > tr > th.sortable:nth-of-type(5) > .title</td>
+<td>*Asset type*</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Assert Title Sort Filter Element Present-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=table.nice > thead > tr > th.sortable:nth-of-type(5) > span:nth-of-type(2)</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=table.nice > thead > tr > th.sortable:nth-of-type(5) > span:nth-of-type(2)</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Assert ID Element Present-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=table.nice > thead > tr > th.sortable:nth-of-type(6) > .title</td>
+<td></td>
+</tr>
+<tr>
+<td>assertText</td>
+<td>css=table.nice > thead > tr > th.sortable:nth-of-type(6) > .title</td>
+<td>*Id*</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Assert Title Sort Filter Element Present-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=table.nice > thead > tr > th.sortable:nth-of-type(6) > span:nth-of-type(2)</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=table.nice > thead > tr > th.sortable:nth-of-type(6) > span:nth-of-type(2)</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Assert Modified Date Filter Element Present-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=table.nice > thead > tr > th.sortable:nth-of-type(7) > .title</td>
+<td></td>
+</tr>
+<tr>
+<td>assertText</td>
+<td>css=table.nice > thead > tr > th.sortable:nth-of-type(7) > .title</td>
+<td>*Modified date*</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Assert Modified Date Sort Filter Element Present-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=table.nice > thead > tr > th.sortable:nth-of-type(7) > span:nth-of-type(2)</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=table.nice > thead > tr > th.sortable:nth-of-type(7) > span:nth-of-type(2)</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Assert Asset Statis Element Present-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=table.nice > thead > tr > th:nth-of-type(8)</td>
+<td></td>
+</tr>
+<tr>
+<td>assertText</td>
+<td>css=table.nice > thead > tr > th:nth-of-type(8)</td>
+<td>*Asset Status*</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Assert Preview Element Present-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#tbody > tr:nth-of-type(1) > td:nth-of-type(1)</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=#tbody > tr:nth-of-type(1) > td:nth-of-type(1)</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Assert Asset Thumbnail Element Present-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#tbody > tr:nth-of-type(1) > td:nth-of-type(2)</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=#tbody > tr:nth-of-type(1) > td:nth-of-type(2)</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Assert Asset Title Element Present-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#tbody > tr:nth-of-type(1) > td.EntryTitleCell</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=#tbody > tr:nth-of-type(1) > td.EntryTitleCell</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Assert Asset Creator Element Present-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#tbody > tr:nth-of-type(1) > td:nth-of-type(4)</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=#tbody > tr:nth-of-type(1) > td:nth-of-type(4)</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Assert Asset Type Element Present-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#tbody > tr:nth-of-type(1) > td:nth-of-type(5)</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=#tbody > tr:nth-of-type(1) > td:nth-of-type(5)</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Assert Asset ID Element Present-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#tbody > tr:nth-of-type(1) > td:nth-of-type(6)</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=#tbody > tr:nth-of-type(1) > td:nth-of-type(6)</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Assert Asset Modified Element Present-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#tbody > tr:nth-of-type(1) > td:nth-of-type(7)</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=#tbody > tr:nth-of-type(1) > td:nth-of-type(7)</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Assert Assen Status Element Present-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#tbody > tr:nth-of-type(1) > td:nth-of-type(8)</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=#tbody > tr:nth-of-type(1) > td:nth-of-type(8)</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Assert Search Field Element Present-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=input[name="query"]</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=input[name="query"]</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Assert Submit Element Present-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=button[type="submit"]</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=button[type="submit"]</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

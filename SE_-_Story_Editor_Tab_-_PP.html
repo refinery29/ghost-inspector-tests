@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://dash.della.cloud.rf29.net" />
+<title>SE - Story Editor Tab - PP</title>
+<meta name="ghost-inspector-details" content="This test creates a new story and inserts an image, HTML asset, and body text into a new story." />
+<meta name="ghost-inspector-browser" content="slimerjs" />
+<meta name="ghost-inspector-userAgent" content="" />
+<meta name="ghost-inspector-region" content="us-east-1" />
+<meta name="ghost-inspector-globalStepDelay" content="1000" />
+<meta name="ghost-inspector-maxWaitDelay" content="30000" />
+<meta name="ghost-inspector-maxAjaxDelay" content="10000" />
+<meta name="ghost-inspector-viewportSize" content="1600x1200" />
+<meta name="ghost-inspector-screenshotTarget" content="" />
+<meta name="ghost-inspector-screenshotExclusions" content="" />
+<meta name="ghost-inspector-screenshotCompareEnabled" content="false" />
+<meta name="ghost-inspector-screenshotCompareThreshold" content="0.1" />
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr>
+<td rowspan="1" colspan="3">SE - Story Editor Tab - PP</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>open</td>
+<td>/</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor Templates - 1 - Login Pre-Prod Deploy-->
+<tr data-optional="true">
+<td>storeEval</td>
+<td><script>return 'dash.' + window.location.host.split(".").slice(1).join('.')</script></td>
+<td>instanceHref</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor Templates - 1 - Login Pre-Prod Deploy
+Dash Login Screen-->
+<tr>
+<td>open</td>
+<td>http://${instanceHref}/login/</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor Templates - 1 - Login Pre-Prod Deploy-->
+<tr>
+<td>pause</td>
+<td>10000</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor Templates - 1 - Login Pre-Prod Deploy-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#login-email</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=#login-email</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor Templates - 1 - Login Pre-Prod Deploy-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#login-email</td>
+<td></td>
+</tr>
+<tr>
+<td>type</td>
+<td>css=#login-email</td>
+<td>cedric.gore@refinery29.com</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor Templates - 1 - Login Pre-Prod Deploy-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=input[name="password"]</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=input[name="password"]</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor Templates - 1 - Login Pre-Prod Deploy-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=input[name="password"]</td>
+<td></td>
+</tr>
+<tr data-private="true">
+<td>type</td>
+<td>css=input[name="password"]</td>
+<td>vandella</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor Templates - 1 - Login Pre-Prod Deploy-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=input[type="submit"]</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=input[type="submit"]</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor Templates - 1 - Login Pre-Prod Deploy-->
+<tr>
+<td>pause</td>
+<td>10000</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor Templates - 1 - Login Pre-Prod Deploy-->
+<tr>
+<td>open</td>
+<td>/stories/new/setup#</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor Templates - 1 - Login Pre-Prod Deploy-->
+<tr>
+<td>pause</td>
+<td>10000</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor Templates - Right Rail US Module
+Open Template Selector-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#react-select-publishing-template-select--value > div:nth-of-type(1)</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=#react-select-publishing-template-select--value > div:nth-of-type(1)</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor Templates - Right Rail US Module
+Select Template (0=RR, 1=Slideshow, 2=Full Width)-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#react-select-publishing-template-select--option-0</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=#react-select-publishing-template-select--option-0</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor Templates - Right Rail US Module
+Open Site Selector-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#react-select-publishing-site-select--value > div:nth-of-type(1)</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=#react-select-publishing-site-select--value > div:nth-of-type(1)</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor Templates - Right Rail US Module
+Select Site: aria-label="US"-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#react-select-publishing-site-select--list div[aria-label="US"]</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=#react-select-publishing-site-select--list div[aria-label="US"]</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor Templates - Right Rail US Module-->
+<tr>
+<td>pause</td>
+<td>500</td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor Templates - Right Rail US Module-->
+<tr>
+<td>store</td>
+<td>${ALPHANUMERIC}-${TIMESTAMP}</td>
+<td>theTitle</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor Templates - Right Rail US Module-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.RichTextInput.RichTextInput--large</td>
+<td></td>
+</tr>
+<tr>
+<td>doubleClick</td>
+<td>css=.RichTextInput.RichTextInput--large</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor Templates - Right Rail US Module-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.RichTextInput.RichTextInput--large</td>
+<td></td>
+</tr>
+<tr>
+<td>type</td>
+<td>css=.RichTextInput.RichTextInput--large</td>
+<td>${theTitle}</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor Templates - Right Rail US Module-->
+<tr>
+<td>pause</td>
+<td>5000</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor Templates - Right Rail US Module-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.RichTextInput.RichTextInput--large</td>
+<td></td>
+</tr>
+<tr>
+<td>type</td>
+<td>css=.RichTextInput.RichTextInput--large</td>
+<td>${theTitle}</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor Templates - Right Rail US Module-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=input[name="basename"]</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=input[name="basename"]</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor Templates - Right Rail US Module-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=input[name="basename"]</td>
+<td></td>
+</tr>
+<tr>
+<td>type</td>
+<td>css=input[name="basename"]</td>
+<td>${theTitle}</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor Templates - Right Rail US Module-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.Header__buttons > button[type="button"].Button:nth-of-type(2)</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=.Header__buttons > button[type="button"].Button:nth-of-type(2)</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor Templates - Right Rail US Module-->
+<tr>
+<td>pause</td>
+<td>5000</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor: Tab Steps - Story Editor Module-->
+<tr>
+<td>pause</td>
+<td>500</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor: Tab Steps - Story Editor Module-->
+<tr>
+<td>storeEval</td>
+<td><script>return (window.location.host.substr(0,4) == "dash") ? window.location.host.replace("dash","preview") : window.location.host;</script></td>
+<td>instanceHref</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor: Tab Steps - Story Editor Module-->
+<tr>
+<td>storeEval</td>
+<td><script>return /[^//]*/.exec(window.location.href.substr(window.location.href.search('stories/')+8))[0]</script></td>
+<td>storyid</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor: Tab Steps - Story Editor Module-->
+<tr>
+<td>open</td>
+<td>/stories/${storyid}/editor</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor: Tab Steps - Story Editor Module-->
+<tr>
+<td>pause</td>
+<td>500</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor: Tab Steps - Story Editor Module-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.Modal__close-button</td>
+<td></td>
+</tr>
+<tr data-optional="true">
+<td>click</td>
+<td>css=.Modal__close-button</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor: Tab Steps - Story Editor Module-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.public-DraftEditor-content</td>
+<td></td>
+</tr>
+<tr>
+<td>doubleClick</td>
+<td>css=.public-DraftEditor-content</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor: Tab Steps - Story Editor Module-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.public-DraftEditor-content</td>
+<td></td>
+</tr>
+<tr>
+<td>type</td>
+<td>css=.public-DraftEditor-content</td>
+<td>Lorem ipsum dolor sit amet, id sapientem conclusionemque eum. No qui tation omittam scaevola, id has enim probo virtute. Ex ancillae dignissim necessitatibus mea. Mei ne modo partem, ut sea quaeque evertitur. Delectus phaedrum abhorreant ad eam, nam velit scaevola ad</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor: Tab Steps - Story Editor Module-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.public-DraftEditor-content</td>
+<td></td>
+</tr>
+<tr>
+<td>sendKeys</td>
+<td>css=.public-DraftEditor-content</td>
+<td>${KEY_ENTER}</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor: Tab Steps - Story Editor Module-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=i.ExpandableMenu__toggle</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=i.ExpandableMenu__toggle</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor: Tab Steps - Story Editor Module-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=i.ExpandableMenu__icon.fa.fa-picture-o</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=i.ExpandableMenu__icon.fa.fa-picture-o</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor: Tab Steps - Story Editor Module-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.ProgressSpinner__cutout</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=.ProgressSpinner__cutout</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor: Tab Steps - Story Editor Module-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=input[type="file"]</td>
+<td></td>
+</tr>
+<tr>
+<td>type</td>
+<td>css=input[type="file"]</td>
+<td>https://ghostinspector-prod.s3.amazonaws.com/uploads/a31427b3-df28-417d-9a5c-d721dce1b6cc.jpg</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor: Tab Steps - Story Editor Module-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.AssetToolbar__controls > i.AssetToolbar__icon.fa:nth-of-type(3)</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=.AssetToolbar__controls > i.AssetToolbar__icon.fa:nth-of-type(3)</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor: Tab Steps - Story Editor Module-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=input[name="searchTerm"]</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=input[name="searchTerm"]</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor: Tab Steps - Story Editor Module-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.AddButton__button > i.fa.fa-plus</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=.AddButton__button > i.fa.fa-plus</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor: Tab Steps - Story Editor Module-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=input[name="affiliate_url"]</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=input[name="affiliate_url"]</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor: Tab Steps - Story Editor Module-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.Modal__close-button</td>
+<td></td>
+</tr>
+<tr data-optional="true">
+<td>click</td>
+<td>css=.Modal__close-button</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor: Tab Steps - Story Editor Module-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.public-DraftEditor-content</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=.public-DraftEditor-content</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor: Tab Steps - Story Editor Module-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=i.ExpandableMenu__toggle</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=i.ExpandableMenu__toggle</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor: Tab Steps - Story Editor Module-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=i.ExpandableMenu__icon.fa.fa-code</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=i.ExpandableMenu__icon.fa.fa-code</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor: Tab Steps - Story Editor Module-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=textarea[name="hypertext.content"]</td>
+<td></td>
+</tr>
+<tr>
+<td>type</td>
+<td>css=textarea[name="hypertext.content"]</td>
+<td><blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:62.4537037037037% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BSzGmKSh9hD/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">I loved this man. I had the pleasure of going on a tour with him 10 years ago and we had an amazing time. He was one of he best story tellers that has ever lived, and I&#39;ll miss him dearly.</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by Joe Rogan (@joerogan) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-04-12T20:20:15+00:00">Apr 12, 2017 at 1:20pm PDT</time></p></div></blockquote>
+<script async defer src="//platform.instagram.com/en_US/embeds.js"></script></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor: Tab Steps - Story Editor Module-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.public-DraftEditor-content > div > div > .public-DraftStyleDefault-block.public-DraftStyleDefault-ltr</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=.public-DraftEditor-content > div > div > .public-DraftStyleDefault-block.public-DraftStyleDefault-ltr</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor: Tab Steps - Story Editor Module-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.modal-buttons > button[type="button"].Button:nth-of-type(2) > span</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=.modal-buttons > button[type="button"].Button:nth-of-type(2) > span</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor: Tab Steps - Story Editor Module-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.Header__buttons > button[type="button"].Button:nth-of-type(2)</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=.Header__buttons > button[type="button"].Button:nth-of-type(2)</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor: Tab Steps - Story Editor Module-->
+<tr>
+<td>pause</td>
+<td>20000</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor: Tab Steps - Story Editor Module-->
+<tr>
+<td>open</td>
+<td>http://${instanceHref}/${theTitle}?type=blog_entry&type_id=${storyid}&app=rosetta&site=us</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor: Tab Steps - Story Editor Module-->
+<tr>
+<td>pause</td>
+<td>5000</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor: Tab Steps - Story Editor Module-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.header</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=.header</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Dash Story Editor: Tab Steps - Story Editor Module-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.img-container > div > img</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=.img-container > div > img</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

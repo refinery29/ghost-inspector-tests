@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://dash.della.cloud.rf29.net" />
+<title>T1: AMP Scrollable (US)</title>
+<meta name="ghost-inspector-details" content="" />
+<meta name="ghost-inspector-browser" content="slimerjs" />
+<meta name="ghost-inspector-userAgent" content="" />
+<meta name="ghost-inspector-region" content="us-east-1" />
+<meta name="ghost-inspector-globalStepDelay" content="250" />
+<meta name="ghost-inspector-maxWaitDelay" content="15000" />
+<meta name="ghost-inspector-maxAjaxDelay" content="10000" />
+<meta name="ghost-inspector-viewportSize" content="1600x1200" />
+<meta name="ghost-inspector-screenshotTarget" content="" />
+<meta name="ghost-inspector-screenshotExclusions" content="" />
+<meta name="ghost-inspector-screenshotCompareEnabled" content="false" />
+<meta name="ghost-inspector-screenshotCompareThreshold" content="0.1" />
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr>
+<td rowspan="1" colspan="3">T1: AMP Scrollable (US)</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>open</td>
+<td>/</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>pause</td>
+<td>5000</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>storeEval</td>
+<td><script>return (window.location.host.substr(0,4) == "dash") ? window.location.host.replace("dash","www") : window.location.host;</script></td>
+<td>instanceHref</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>open</td>
+<td>http://${instanceHref}/amp/hot-air-hair-brush${querystring}#development=1</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>pause</td>
+<td>20000</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=h1.article-title</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=h1.article-title</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.top-byline</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=.top-byline</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.top-byline</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=.top-byline</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.byline-socials.top > a[href^="https://www.facebook.com/dialog/share"].social-share.facebook-button > button.fa.fa-facebook</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=.byline-socials.top > a[href^="https://www.facebook.com/dialog/share"].social-share.facebook-button > button.fa.fa-facebook</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.byline-socials.top > a[href^="mailto:"].social-share.email-button > button.fa.fa-envelope-o</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=.byline-socials.top > a[href^="mailto:"].social-share.email-button > button.fa.fa-envelope-o</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.byline-socials.top > a[href^="https://twitter.com/intent/tweet"].social-share.twitter-button > button.fa.fa-twitter</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=.byline-socials.top > a[href^="https://twitter.com/intent/tweet"].social-share.twitter-button > button.fa.fa-twitter</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.byline-socials.top > a[href^="https://share.flipboard.com/bookmarklet/popout"].social-share.flipboard-button > button.fa.fa-flipboard</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=.byline-socials.top > a[href^="https://share.flipboard.com/bookmarklet/popout"].social-share.flipboard-button > button.fa.fa-flipboard</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.byline-socials.top > a[href^="sms:"].social-share.text-button > button.fa.fa-comment-o</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=.byline-socials.top > a[href^="sms:"].social-share.text-button > button.fa.fa-comment-o</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=amp-img.full-bleed > img.i-amphtml-fill-content.i-amphtml-replaced-content</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=amp-img.full-bleed > img.i-amphtml-fill-content.i-amphtml-replaced-content</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=iframe[src*="content.jwplatform.com"] video.jw-video</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=iframe[src*="content.jwplatform.com"] video.jw-video</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.article-body</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=.article-body</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.article-body > section:nth-of-type(5) > p</td>
+<td></td>
+</tr>
+<tr>
+<td>assertText</td>
+<td>css=.article-body > section:nth-of-type(5) > p</td>
+<td>*That said, when we stumbled across a set of rollers unlike any we'd ever seen before, we knew we simply had to give it a go. Might this device be the ticket to seriously voluminous hair? There's only one way to find out. Check out our trial, above.*</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=iframe[name="amp_iframe1"] body > div:nth-of-type(1)</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=iframe[name="amp_iframe1"] body > div:nth-of-type(1)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

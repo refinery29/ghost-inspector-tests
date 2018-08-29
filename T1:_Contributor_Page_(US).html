@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://dash.della.cloud.rf29.net" />
+<title>T1: Contributor Page (US)</title>
+<meta name="ghost-inspector-details" content="This is a test for US contributor pages.
+
+This test makes assertions for the author name, image and rows of cards.
+
+As an optional step, this test looks for a "more stories" button at the bottom of the page. But because development instances where we test usually have limited content loaded onto them, the expected "more stories" button will not always appear. Thus why this step is optional in this test.
+
+This test imports the Global Nav and Global Footer tests from the Tier One Modules folder to test for those items on contributor pages." />
+<meta name="ghost-inspector-browser" content="slimerjs" />
+<meta name="ghost-inspector-userAgent" content="" />
+<meta name="ghost-inspector-region" content="us-east-1" />
+<meta name="ghost-inspector-globalStepDelay" content="250" />
+<meta name="ghost-inspector-maxWaitDelay" content="60000" />
+<meta name="ghost-inspector-maxAjaxDelay" content="10000" />
+<meta name="ghost-inspector-viewportSize" content="1600x1200" />
+<meta name="ghost-inspector-screenshotTarget" content="" />
+<meta name="ghost-inspector-screenshotExclusions" content="" />
+<meta name="ghost-inspector-screenshotCompareEnabled" content="false" />
+<meta name="ghost-inspector-screenshotCompareThreshold" content="0.1" />
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr>
+<td rowspan="1" colspan="3">T1: Contributor Page (US)</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>open</td>
+<td>/</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>storeEval</td>
+<td><script>return (window.location.host.substr(0,4) == "dash") ? window.location.host.replace("dash","www") : window.location.host;</script></td>
+<td>instanceHref</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--go to Kelsey Miller's contributor page on that instance-->
+<tr>
+<td>open</td>
+<td>http://${instanceHref}/author/kelsey-miller${querystring}</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>pause</td>
+<td>10000</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Tier One - T1 Module: Global Nav New-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.condensed</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=.condensed</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Tier One - T1 Module: Global Nav New-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=a[href="/en-us"].nav-category-padding</td>
+<td></td>
+</tr>
+<tr>
+<td>assertText</td>
+<td>css=a[href="/en-us"].nav-category-padding</td>
+<td>*Discover*</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Tier One - T1 Module: Global Nav New-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=a[href="/en-us/video"].nav-category-padding</td>
+<td></td>
+</tr>
+<tr>
+<td>assertText</td>
+<td>css=a[href="/en-us/video"].nav-category-padding</td>
+<td>*Watch*</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Tier One - T1 Module: Global Nav New
+NEW-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=a[href="/shop"].nav-category-padding</td>
+<td></td>
+</tr>
+<tr>
+<td>assertText</td>
+<td>css=a[href="/shop"].nav-category-padding</td>
+<td>*Shop*</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Tier One - T1 Module: Global Nav New-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.nav-category-and-subnav.more > .nav-category > a.nav-category-padding</td>
+<td></td>
+</tr>
+<tr>
+<td>assertText</td>
+<td>css=.nav-category-and-subnav.more > .nav-category > a.nav-category-padding</td>
+<td>*More*</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Tier One - T1 Module: Global Nav New-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.country > img</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=.country > img</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Tier One - T1 Module: Global Nav New-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.global-site-switch</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=.global-site-switch</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Tier One - T1 Module: Global Nav New-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=body</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=body</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Tier One - T1 Module: Global Nav New-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.fa.fa-search</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=.fa.fa-search</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Tier One - T1 Module: Global Nav New-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.fa.fa-search</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=.fa.fa-search</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Tier One - T1 Module: Global Nav New-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#search-header</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=#search-header</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--verify page header with author name and image is present-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#below-the-fold-modules > div.module.page-header.with-image</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=#below-the-fold-modules > div.module.page-header.with-image</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Tier One - T1 Module: Global Footer-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=a[href="/en-us"] > .three-unequal-content-wrapper</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=a[href="/en-us"] > .three-unequal-content-wrapper</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Tier One - T1 Module: Global Footer-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=a[href="/video"] > .three-unequal-content-wrapper > .jump-content.three-unequal-content</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=a[href="/video"] > .three-unequal-content-wrapper > .jump-content.three-unequal-content</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Tier One - T1 Module: Global Footer-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=a[href="/shop"] > .three-unequal-content-wrapper > .jump-content.three-unequal-content</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=a[href="/shop"] > .three-unequal-content-wrapper > .jump-content.three-unequal-content</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Tier One - T1 Module: Global Footer-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=img.logo</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=img.logo</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Tier One - T1 Module: Global Footer-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.copyright</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=.copyright</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Tier One - T1 Module: Global Footer-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.fa.fa-envelope-o</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=.fa.fa-envelope-o</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Tier One - T1 Module: Global Footer-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.fa.fa-facebook</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=.fa.fa-facebook</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Tier One - T1 Module: Global Footer-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.fa.fa-youtube-play</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=.fa.fa-youtube-play</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Tier One - T1 Module: Global Footer-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.fa.fa-instagram</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=.fa.fa-instagram</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Tier One - T1 Module: Global Footer-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.fa.fa-twitter</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=.fa.fa-twitter</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Tier One - T1 Module: Global Footer-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.fa.fa-pinterest-p</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=.fa.fa-pinterest-p</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Tier One - T1 Module: Global Footer-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.fa.fa-tumblr</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=.fa.fa-tumblr</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Tier One - T1 Module: Global Footer-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.links.company</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=.links.company</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Tier One - T1 Module: Global Footer-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.links.information</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=.links.information</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Tier One - T1 Module: Global Footer-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.links.editions</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=.links.editions</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--Imported from: Modules - Tier One - T1 Module: Global Footer-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.email-signup</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=.email-signup</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.image</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=.image</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.page-header-content > h1</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=.page-header-content > h1</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.row</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=.row</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

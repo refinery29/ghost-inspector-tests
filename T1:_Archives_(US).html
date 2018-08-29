@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://dash.stack05.beta.rf29.net" />
+<title>T1: Archives (US)</title>
+<meta name="ghost-inspector-details" content="This test goes to the archives landing page to make assertions and then makes specific year and author selections to go to a specific date of the archives to make assertions there." />
+<meta name="ghost-inspector-browser" content="slimerjs" />
+<meta name="ghost-inspector-userAgent" content="" />
+<meta name="ghost-inspector-region" content="us-east-1" />
+<meta name="ghost-inspector-globalStepDelay" content="250" />
+<meta name="ghost-inspector-maxWaitDelay" content="60000" />
+<meta name="ghost-inspector-maxAjaxDelay" content="10000" />
+<meta name="ghost-inspector-viewportSize" content="1600x900" />
+<meta name="ghost-inspector-screenshotTarget" content="" />
+<meta name="ghost-inspector-screenshotExclusions" content="" />
+<meta name="ghost-inspector-screenshotCompareEnabled" content="false" />
+<meta name="ghost-inspector-screenshotCompareThreshold" content="0.1" />
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr>
+<td rowspan="1" colspan="3">T1: Archives (US)</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>open</td>
+<td>/</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>pause</td>
+<td>500</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>storeEval</td>
+<td><script>return 'www.' + window.location.host.split(".").slice(1).join('.')</script></td>
+<td>instanceHref</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--go to the archives page on that instance-->
+<tr>
+<td>open</td>
+<td>http://${instanceHref}/archives</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>pause</td>
+<td>20000</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--ensure header of page says ARCHIVES-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.module h1</td>
+<td></td>
+</tr>
+<tr>
+<td>verifyElementPresent</td>
+<td>css=.module h1</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--ensure page has container for selecting the date-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#r29-container > div:nth-of-type(1)</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=#r29-container > div:nth-of-type(1)</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--ensure date picker for year is present-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#archives-nav > .date-picker:nth-of-type(1)</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=#archives-nav > .date-picker:nth-of-type(1)</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--ensure date picker for month is present-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#archives-nav > .date-picker.no-date:nth-of-type(2)</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=#archives-nav > .date-picker.no-date:nth-of-type(2)</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--ensure date picker for day is present-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#archives-nav > .date-picker.no-date:nth-of-type(3)</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=#archives-nav > .date-picker.no-date:nth-of-type(3)</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--ensure go button for date picker is present-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#archives-submit</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=#archives-submit</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--ensure featured card header is present-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#below-the-fold-modules > div:nth-child(1) > div > div > div:nth-child(1)</td>
+<td></td>
+</tr>
+<tr>
+<td>verifyElementPresent</td>
+<td>css=#below-the-fold-modules > div:nth-child(1) > div > div > div:nth-child(1)</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--ensure there is a first row of cards below the year module-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#below-the-fold-modules > div:nth-child(2) > div > div > div:nth-child(1)</td>
+<td></td>
+</tr>
+<tr>
+<td>verifyElementPresent</td>
+<td>css=#below-the-fold-modules > div:nth-child(2) > div > div > div:nth-child(1)</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--ensure there is a second row of cards below the year module-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#below-the-fold-modules > div:nth-child(2) > div > div > div:nth-child(2)</td>
+<td></td>
+</tr>
+<tr>
+<td>verifyElementPresent</td>
+<td>css=#below-the-fold-modules > div:nth-child(2) > div > div > div:nth-child(2)</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--ensure there is a third row of cards below the year module-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#below-the-fold-modules > div:nth-child(2) > div > div > div:nth-child(3)</td>
+<td></td>
+</tr>
+<tr>
+<td>verifyElementPresent</td>
+<td>css=#below-the-fold-modules > div:nth-child(2) > div > div > div:nth-child(3)</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--ensure there are more year options at the bottom of the page-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#archive-years</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=#archive-years</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--click to select year-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#select-year</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=#select-year</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--select the year 2016-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#select-year</td>
+<td></td>
+</tr>
+<tr>
+<td>type</td>
+<td>css=#select-year</td>
+<td>2016</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--click to select month-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#select-month</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=#select-month</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--select the month march-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#select-month</td>
+<td></td>
+</tr>
+<tr>
+<td>type</td>
+<td>css=#select-month</td>
+<td>2</td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--click to go to march 2016 (do not select day)-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#archives-submit</td>
+<td></td>
+</tr>
+<tr>
+<td>click</td>
+<td>css=#archives-submit</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--pause for page to refresh with search results-->
+<tr>
+<td>pause</td>
+<td>9000</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--ensure page header says March 2016-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.module > h1</td>
+<td></td>
+</tr>
+<tr>
+<td>verifyElementPresent</td>
+<td>css=.module > h1</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--ensure date selection tools are still present-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#select-year</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=#select-year</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--ensure date selection tools are still present-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#select-month</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=#select-month</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--ensure date selection tools are still present-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=#select-day</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=#select-day</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--CEDRIC REMOVED STEP 32 ASSERTION:  FALSE FAILURE: "a[href="/archives/2016/03/31"] > .date-label" "Element is present" 4/14/17-->
+<tr>
+<td>pause</td>
+<td>10</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--ensure there are cards loaded as results-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.module > div > div:nth-of-type(1) > .row > div:nth-of-type(1)</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=.module > div > div:nth-of-type(1) > .row > div:nth-of-type(1)</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--ensure there are cards loaded as results-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.module > div > div:nth-of-type(1) > .row > div:nth-of-type(1)</td>
+<td></td>
+</tr>
+<tr>
+<td>assertElementPresent</td>
+<td>css=.module > div > div:nth-of-type(1) > .row > div:nth-of-type(1)</td>
+<td></td>
+</tr>
+<tr>
+<td>waitForPageToLoad</td>
+<td></td>
+<td></td>
+</tr>
+<!--ensure card result has title header-->
+<tr>
+<td>waitForElementPresent</td>
+<td>css=.module > div > div:nth-of-type(1) > .row > div:nth-of-type(3)</td>
+<td></td>
+</tr>
+<tr>
+<td>verifyElementPresent</td>
+<td>css=.module > div > div:nth-of-type(1) > .row > div:nth-of-type(3)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
